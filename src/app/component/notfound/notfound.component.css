@@ -1,0 +1,27 @@
+*{
+	font-size: 30px;
+	color : #343a40; 
+}
+.bg{
+	font-size: 60px;
+}
+.container{
+	min-height: 25vh;
+	padding-top: 10% ; 
+}
+::ng-deep .bodySize{
+    padding-bottom: 675px;
+    min-height:120vh;
+}
+@media(min-height:900px){
+    ::ng-deep .bodySize{
+        min-height:100vh;
+    }
+}
+@media (min-width:960px )
+{
+    ::ng-deep .bodySize{
+        padding-bottom: 353px;
+        background-color: rgb(230,230,230);
+    }
+}

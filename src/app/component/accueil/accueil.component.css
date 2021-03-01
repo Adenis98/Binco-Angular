@@ -1,0 +1,14 @@
+*{
+    user-select: none;
+    font-family :'MyWebFontRegular' ; 
+}
+
+::ng-deep .bodySize{
+    padding-bottom: 675px;
+}
+@media(min-height:700px)
+{
+    ::ng-deep .bodySize{
+        padding-bottom: 353px;
+    }
+}

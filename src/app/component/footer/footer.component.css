@@ -1,0 +1,75 @@
+
+
+.topsidefooter{
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+div.footer_title{
+	font-size: x-large;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+
+}
+.social_media i.fa-twitter:hover
+{
+	color:#fdfdfd;
+	border: 2px solid #50ABF1;
+	background-color: #50ABF1;
+}
+.social_media i.fa-facebook-f:hover
+{
+	color:#18ACFE;
+	border: 2px solid white;
+	background-color: white;
+}
+.social_media i.fa-instagram:hover
+{
+	border:2px solid #285AEB;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)
+}
+.social_media i
+{
+	color: white;
+    font-weight: 400;
+	padding-top: 18px;
+	margin-top: 30;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 2px solid white;
+	transition : 0.4s;
+}
+@media(min-width:600px){
+	div.subfooter.row
+	{
+		padding-top: 50px;
+	}
+}
+div.subfooter 
+{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+footer{
+	background-color: #2C3E50;
+	position:absolute;
+	bottom: 0px;
+	text-align: center;
+	color: #ffffff;
+	padding : 0px;
+	width: 100vw ; 
+}
+.Copyright
+{
+	background-color:#1D2935 ;
+	padding:10px;
+	margin : 0px;
+	color: white;
+	text-align: center;
+	position : relative ;
+	bottom : 0px;
+}	
+.log{
+	margin-top:8px;
+}

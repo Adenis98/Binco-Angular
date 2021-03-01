@@ -1,0 +1,62 @@
+*
+{
+    padding : 0px;
+    margin : 0px;
+    border : 0px;
+}
+.carousselContainer{
+    position : relative ; 
+    padding : 0px; 
+    border : 0px;
+}
+.carousselContainer h2
+{ 
+    font-size: 50px;
+	z-index: 50;
+	text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 900px;min-width:200px;
+    line-height: inherit;
+    margin: 70px;font-style: initial;
+}
+.redeffect{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom :  0;
+    background: #BE3144;
+    transition: 2s all;
+    z-index: -1;
+}
+.redeffectanimation {
+    width: 100%;
+}
+.imres{
+    height: 95vh;
+    width : 100vw;
+}
+
+.overlay{
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+}
+.carousel-control-prev,.carousel-control-next{
+	z-index: 5;
+}
+.carousel-inner
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+@media(min-width:600px){
+    .carousselContainer h2
+    { font-size: 75px;font-family : MyWebFontBold}
+}
+/*-------------------------- ****** --------------------------*/

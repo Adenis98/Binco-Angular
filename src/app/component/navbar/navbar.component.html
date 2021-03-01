@@ -1,0 +1,40 @@
+<header>
+    <div class=" shadow  mb-5  rounded">
+        <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark row ">
+            <div class="container-fluid" style="margin-left: 70px; margin-right: 70px;">
+                <a class="navbar-brand" href="php/index.php"><img src="assets/img/binco.png" alt="BINCO"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav col-md-9">
+                        <li class="nav-item ">
+                            <a class="nav-link" routerLink="/acceuil" routerLinkActive="active">Accueil</a>
+                        </li>
+                        <li ngbDropdown class="nav-item dropdown " routerLinkActive="active">
+                            <a ngbDropdownToggle class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Articles
+                            </a>
+                            <div ngbDropdownMenu class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                                <a ngbDropdownItem class="dropdown-item" routerLinkActive="current"routerLink="/article/homme">Homme</a>
+                                <a ngbDropdownItem class="dropdown-item" routerLinkActive="current"routerLink="/article/femme">Femme</a>
+                                <a ngbDropdownItem class="dropdown-item" routerLinkActive="current"routerLink="/article/enfant">Enfant</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link cont">Contactez-Nous</a>
+                        </li>     			      			
+                    </ul>
+                    <ul class="col-md-3 navbar-nav" >
+                        <li class="nav-item " >
+                            <a class="nav-link" routerLink="/inscription" routerLinkActive="active" >Inscription</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a  class="nav-link" routerLink="/connexion" routerLinkActive="active"  >Connexion</a>
+                        </li>   
+                    </ul>    	
+                </div>
+        </div>
+        </nav>
+    </div>
+</header>

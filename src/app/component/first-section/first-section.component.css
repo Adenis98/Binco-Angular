@@ -1,0 +1,28 @@
+
+.nouvsection{
+	background-color: rgba(255,255,255,0.8);
+	transition: 0.8s;
+    padding-bottom: 50px;
+}
+
+.nouv-title-style{
+	font-size: 40px;
+	font-weight: 220;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color : #343a40 ;
+}
+.box{
+	height:250px;
+	background-color:transparent;
+	border-radius: 5px;
+	padding : 10px;
+	transition : 0.4s ; 
+}
+.box:hover{
+	height:350px;
+	background-color: #BE3144;
+	border-radius: 5px;
+	color : white ; 
+	cursor: pointer;
+}

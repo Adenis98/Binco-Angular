@@ -1,0 +1,78 @@
+<!-- -------------------------------------------- Form BEGIN ----------------------------------------------   -->
+<div class=" formsection"  id="bigbox">
+	<div class="container ">
+		<div class="row">
+			<div class="col-md-12 text-center nouv-title-style" >Inscription</div> 
+		</div><br>
+            <div class="center text-center box-connexion shadow p-3 mb-5 bg-white rounded "  id="hei" >
+                <div class="container">
+                    <form  action="php/inscription.php" method="post"  [formGroup]="form" (submit)="inscrire()"  class="form-group" name="frm"><br>
+
+                        <input type="text" placeholder="Nom" name="nom" class="form-control" id="nom" formControlName="nom" required><br>
+                        <input type="text" placeholder="Prénom" name="prenom" class="form-control " id="prenom" formControlName="prenom" required><br>
+                        <input type="email" placeholder="E-mail" name="email"  class="form-control " id="email" formControlName="mail"  required><br>
+                        <input type="password" placeholder="Mot de passe" name="mdp" class="form-control " #mdp1 id="mdp" formControlName="mdp" required><br>
+                        <input type="password" placeholder="Confirmer le mot de passe" class="form-control" #mdp2 (change)="verifMdp(mdp1,mdp2)" [class.error]="mdpError"id="mdp2" required><br>
+                    
+                        <div class="row" >
+                            <div class="form-check">
+                            </div>
+                            <div class="col-lg">
+                                <span  style="color : rgb(116, 115, 115) ;font-size: 18px; font-family:  sans-serif;font-weight: 800;margin-left: -20px;" >
+                                    Genre :
+                                </span>
+                            </div>
+                            <div class="col-lg">
+                                <input class=" form-check-input" type="radio" name="genre" id="femme" value="f" >
+                                <label class="form-check-label" for="femme">
+                                    Femme 
+                                </label>
+                            </div>
+                            <div class="col-lg">
+                                <input class="form-check-input" type="radio" name="genre" id="homme" value="h" >
+                                <label class=" form-check-label" for="homme">
+                                    Homme
+                                </label>
+                            </div>
+                        </div><br>
+                        <textarea name="adresse" class="form-control" placeholder="Adresse" rows="3" id="adr" formControlName="adr" required></textarea>
+                        <br>
+                        
+                        <div *ngIf="nom.invalid && nom.touched||prenom.invalid && prenom.touched||mail.invalid && mail.touched||adr.invalid && adr.touched||mdp.invalid && mdp.touched||mdpError"
+                             class="alert alert-danger">
+                            <div *ngIf="nom.invalid && nom.touched">
+                                <div *ngIf="nom.errors.minlength">* le nom doit contenir au moins 3 caractère </div>
+                                <div *ngIf="nom.errors.required">* veuillez specifier le nom </div>
+                                <div *ngIf="nom.errors.onlyLetters">* le nom ne doit contenir que des lettres </div>
+                                <div *ngIf="nom.errors.cannotContainSpace">* le nom ne doit pas avoir des espaces </div>
+                            </div>
+                            <div *ngIf="prenom.invalid && prenom.touched">
+                                <div *ngIf="prenom.errors.minlength">* le prenom doit contenir au moins 3 caractère </div>
+                                <div *ngIf="prenom.errors.required">* veuillez specifier le prenom </div>
+                                <div *ngIf="prenom.errors.onlyLetters">* le prenom ne doit contenir que des lettres </div>
+                                <div *ngIf="prenom.errors.cannotContainSpace">* le prenom ne doit pas avoir des espaces </div>
+                            </div>
+                            <div *ngIf="mail.invalid && mail.touched">
+                                * l'email est invalide 
+                            </div>
+                            <div *ngIf="adr.invalid && adr.touched">
+                                * l'adresse est invalide 
+                            </div>
+                            <div *ngIf="mdp.invalid && mdp.touched">
+                                <div *ngIf="mdp.errors.minlength">* le mot de passe doit contenir au moins 10 caractère </div>
+                                <div *ngIf="mdp.errors.required">* veuillez specifier le mot de passe </div>
+                            </div>
+                            <div *ngIf="mdpError">
+                                * les deux mot de passe ne sont pas conforme 
+                            </div>
+                        </div>
+                        <input   type="submit" value="Inscription" id="sub"
+                                [class.btn-submit]="form.valid&&!mdpError" 
+                                [class.btn-submit-inscription]="!form.valid||mdpError"
+                                [disabled]="!form.valid||mdpError"
+                                >
+                    </form>
+                </div>
+            </div>
+	</div>
+</div>

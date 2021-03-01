@@ -1,0 +1,10 @@
+*{
+    font-family : "MyWebFontBold";
+}
+.nav-link{
+    cursor: pointer;
+}
+.current{
+    color:white;
+    background-color:#343a40
+}

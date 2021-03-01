@@ -1,0 +1,40 @@
+<div class="carousselContainer" (mouseenter)="clickEvent()">
+  
+  <div style="position : absolute;top : 10px;z-index: 500;color:white;max-width:990px;height: 95vh;">
+    <table style="border: 0px;padding:0px">
+      <tr >
+        <td  style="vertical-align:center;height: 93vh;">
+          <h2 (mouseenter)="clickEvent()"> UNE NOUVELLE<br>APPROCHE DU 
+            <span style="position : relative"  >shopping 
+              <div id="spaneffectanim" class="redeffect " [class.redeffectanimation]="status" ></div>
+               <!-- [ngClass]="status ? 'redeffectanimation':' '" --> 
+            </span>
+          </h2>
+        </td>
+      </tr>
+    </table>
+    
+  </div>
+  <ngb-carousel *ngIf="images" [showNavigationArrows]="navArrows" >
+  
+    <ng-template ngbSlide>
+      <div class="overlay"></div>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[0]" class="imres" alt="Random first slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="overlay"></div>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[1]"class="imres"  alt="Random second slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="overlay"></div>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[2]" class="imres" alt="Random third slide">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+

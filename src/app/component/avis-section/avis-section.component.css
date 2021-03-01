@@ -1,0 +1,51 @@
+/*-------------------------- new Section   --------------------------*/
+.new{
+	background-color: white;
+	color : black;
+}
+.new-title-style{
+	font-size: 40px;
+	font-weight: 240;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color : black ;
+}
+.boxnew{
+	height:350px;
+	background-color:transparent;
+	border-radius: 5px;
+	padding : 10px;
+	margin : 10px;
+	height: 400px;
+	transition : 0.4s ; 
+	position: relative;
+}
+.boxnew:hover {
+	height:400px;
+	background-color: #FFD933 !important;
+	border-radius: 5px;
+	color : black ; 
+	cursor : pointer ; 
+}
+.boxnew:hover .img-bigger{
+	width: 210px;
+	height: 225px;
+}
+.coments{
+	background-color:#FFD933 ;
+	position : absolute ; color : black ; 
+	top : 20px;
+	left : 0px;
+	width:220px ;
+	height: 70px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius:  100px;
+	font-size: 20px;
+	text-align: left;
+	padding : 4px;
+	transition : 0.4s;
+}
+.boxnew:hover .coments{
+	background-color:white ;
+}
+/*-------------------------- ****** --------------------------*/

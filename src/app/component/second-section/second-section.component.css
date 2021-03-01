@@ -1,0 +1,29 @@
+/*-------------------------- promo  --------------------------*/
+.promo{
+	background-color: #343a40;
+	color : white;
+	transition: 0.8s;
+    padding-bottom: 50px;
+}
+.nouv-title-stylepromo{
+	font-size: 40px;
+	font-weight: 220;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color : white ;
+}
+.boxpromo{
+	height:250px;
+	background-color:transparent;
+	border-radius: 5px;
+	padding : 10px;
+	transition : 0.4s ; 
+}
+.boxpromo:hover{
+	height:350px;
+	background-color: white;
+	border-radius: 5px;
+	color : black ; 
+	cursor : pointer ; 
+}
+/*-------------------------- ****** --------------------------*/

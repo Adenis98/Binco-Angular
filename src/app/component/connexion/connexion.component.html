@@ -1,0 +1,34 @@
+<div class="formsection" >
+	<div class="container ">
+		<div class="row">
+			<div class="col-md-12 text-center nouv-title-style " >Connectez-Vous</div> 
+		</div><br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="center text-center box-connexion shadow p-3 mb-5 bg-white rounded ">
+                    <div class="container">
+                        <form #f="ngForm" (submit)="connect(f)">
+                            <div class="space"></div>
+                            <div class="space"></div>
+                            <input type="email" required  placeholder="E-mail" name="email" ngModel #mail="ngModel" class="form-control " id="mail"><br>
+                            <input type="password" required placeholder="Mot de passe" name="mdp" ngModel #mdp="ngModel" class="form-control " id="mdp"><br><br>
+                            <div *ngIf="f.invalid&&f.touched" class="alert alert-danger">
+                                <div *ngIf="mail.invalid&&mail.touched">* email invalide</div>
+                                <div *ngIf="mdp.invalid&&mdp.touched">* mot de passe invalide</div>
+                            </div>
+                            <input 
+                                type="submit"
+                                [class.btn-submit]="f.valid" 
+                                [class.btn-submit-inscription]="!f.valid"
+                                [disabled]="!f.valid"
+                                value="Connexion">
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+	</div>
+</div>

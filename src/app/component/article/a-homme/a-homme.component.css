@@ -1,0 +1,182 @@
+
+
+*{
+    font-family :'MyWebFontRegular' ; 
+}
+.boxnew{
+    height: 400px;
+    position : relative; 
+}
+.subbtn{
+    border : 0px; 
+    font-size:22px ;
+    position: absolute ;
+    bottom : 5px;
+    right:5px;
+    color : rgb(122, 122, 122);
+    background-color: rgb(228, 228, 228);
+    padding : 6px;
+    border-radius: 3px;
+    transition : .8s;
+    outline: none ;
+    height: 50px;
+    width: 50px;
+}
+.subbtn:hover {
+   
+    color : rgb(29, 29, 29);
+    background-color: rgb(160, 160, 160);
+    border-radius: 50px;outline: none ;
+}
+.subbtn:active {
+    color : rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);outline: none ;
+}
+
+.img1{
+    opacity: 1;
+    max-height: 100%;
+    min-height: 60%;
+    max-width: 100%;
+    position: absolute;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+}
+.img2{
+    opacity: 0;
+    max-height: 100%;
+    min-height: 60%;
+    max-width: 100%;
+    position: absolute;
+    transition: 0.5s;
+    border-radius: 4%;
+}
+
+.img1:hover{
+    opacity: 0;
+
+}
+
+
+.img2:hover{
+    opacity: 1;
+}
+
+.product-new-label{
+    background-color: #BE3144;
+    color: #fff;
+    padding: 2px 20px;
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    font-size: 10px;
+}
+
+.bg-white .fa-shopping-cart{
+    position: absolute;
+    right:10px;
+    top: 300px;
+    color:#BE3144;
+    background:#fff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 50px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    transition: 0.5s;
+}
+
+.bg-white .fa-shopping-cart:hover{
+    background:#BE3144;
+    color:#fff;
+    cursor: pointer;
+}
+
+.content
+{
+    position: absolute;
+    bottom: 5px;
+    text-align: left;
+    margin: 10px;
+}
+
+.produit
+{
+    position: relative; 
+    height: 420px;
+    max-width : 255px;
+    background-color: #fafafa; 
+    border-radius: 4%;
+    margin : auto ; 
+    font-size: 13px;
+}
+
+.button {
+    background-color: #BE3144;
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 100%;
+    position: relative;
+    width:80px;
+    height:80px;
+    border: 3px solid #BE3144;
+    transition: 0.5s;
+  }
+
+  .button:hover{
+    background-color: white;
+    color: #BE3144;
+  }
+  .nouv-title-style{
+    font-size: 40px;
+    font-weight: 220;
+	margin-top: 30px;
+    color: #343a40;
+}
+
+.allArticles{
+    margin-top : 30px;
+    margin-bottom: 80px;
+}
+.articleSpacement{
+    margin-top:40px;
+}
+@media(max-width:575px)
+{
+    .produit{
+        width : 255px;
+    }
+}
+
+@media(min-width:767px)
+{
+    .produit{
+        max-height : 280px;
+    }
+    
+}
+@media(min-width:990px)
+{
+    .produit{
+        max-height : 350px;
+    }
+}
+@media(min-width:1200px)
+{
+    .produit{
+        max-height : 420px;
+    }
+    
+}
+.content .content-name{
+    font-size: 19px;
+}
+.content .content-price{
+    font-size: 15px;
+    margin-bottom: 0px;
+}

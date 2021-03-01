@@ -1,0 +1,40 @@
+
+    <div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12 text-center nouv-title-style " >Les Articles des Hommes</div> 
+            </div>
+            <div class="allArticles" >
+                <div class="row align-items-center"  >
+                    
+                    <div class="col-md-3 col-sm-6 col-xs-12  articleSpacement"  *ngFor="let a of this.articleHomme.art;let i = index">
+                        <a style="color: inherit; text-decoration: inherit;" [routerLink]="['/article/homme',a.id]" >
+                            <div class="produit shadow ">
+                                <div class="bg-white rounded" >
+                                    <img class="img1 " [src]="a.im1" alt="shirt" >
+                                    <img class="img2 " [src]="a.im2" alt="shirt">
+                                    <span class="product-new-label">NOUVEAU</span>
+                                    <div *ngIf="false" >
+                                        <a ><i class="fa fa-shopping-cart"></i></a>     
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <p class="content-name">{{a.nom}}{{i}}</p>
+                                    <p class="content-price"><b>${{a.prix}} </b> <s *ngIf="a.oldPrice!=a.prix" style="color: grey;"> ${{this.articleHomme.art[0].oldPrice}}</s></p>
+                                </div>   
+                            </div>
+                            
+                        </a>
+                    </div>
+                 
+                    
+                </div>
+            </div>
+            
+    </div>
+    <ul class="d-none" name="cartitems" id="cartitems">
+    </ul>
+    <input class="d-none" type="text" name="totalprix">
+    <input class="d-none" type="text" name="totalnbr">
+
+<!-- -------------------------------------------- article homme END ----------------------------------------------   -->

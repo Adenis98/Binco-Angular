@@ -1,0 +1,61 @@
+.space{
+    height: 23px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.formsection {
+    padding-top: 0px;
+    background-color: rgb(230,230,230);
+}
+.btn-submit{
+    background-color: #BE3144;
+    border: #BE3144 solid;
+    border-radius: 5px;
+    color : white  ; 
+    height: 50px;
+    font-size: 18px;
+}
+.btn-submit-inscription {
+    background-color: grey;
+    border: grey solid;
+    border-radius: 5px;
+    color : white  ; 
+    height: 50px;
+    font-size: 18px;
+}
+.btn-submit:hover{
+    background-color: #831f2c;
+    border-color: #831f2c;
+}
+.nouv-title-style{
+    font-size: 40px;
+    font-weight: 220;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    color: #343a40;
+}
+.box-connexion{
+    background-color: white;
+    position:sticky;
+    color : black;
+}
+.container .alert{
+    margin-top : 10px;
+    text-align: left ;
+}
+.form-control.ng-invalid.ng-touched,.error{
+    border : 2px solid red ;
+}
+@media (min-width:960px )
+{
+    .formsection{
+        padding-top:1%;
+    }
+    .box-connexion{
+        width : 500px;
+        min-height: 300px;
+    }
+}
